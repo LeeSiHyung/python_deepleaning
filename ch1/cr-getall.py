@@ -37,7 +37,7 @@ def download_file(url):
         return savepath
 
     # 다운받을 폴더 생성
-    if not os.path.exitst(savedir):
+    if not os.path.exists(savedir):
         print("mkdir=", savedir)
         makedirs(savedir)
 
