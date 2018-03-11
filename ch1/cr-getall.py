@@ -13,7 +13,9 @@ proc_files = {}
 # HTML 내부에 있는 링크를 추출하는 함수
 def enum_links(html,base):
     soup = BeautifulSoup(html, "html.parser")
+    # css 태그 가져오기
     links = soup.select("link[rel='stylesheet']") # css
+    # a href 링크 태그 가져오기
     links += soup.select("a[href]") # 링크
     result = []
 
@@ -37,7 +39,7 @@ def download_file(url):
         return savepath
 
     # 다운받을 폴더 생성
-    if not os.path.exitst(savedir):
+    if not os.path.exists(savedir):
         print("mkdir=", savedir)
         makedirs(savedir)
 
