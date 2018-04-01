@@ -12,7 +12,7 @@ session = requests.session()
 # 로그인하기
 login_info = {
     "m_id": USER,       # 아이디 지정
-    "m_passswd": PASS   # 비밀번호 지정
+    "m_passwd": PASS   # 비밀번호 지정
 }
 
 url_login = "http://www.hanbit.co.kr/member/login_proc.php"
