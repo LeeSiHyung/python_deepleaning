@@ -31,7 +31,7 @@ print("로그인 버튼을 클릭합니다,")
 browser.get("https://order.pay.naver.com/home?tabMenu=SHOPPING")
 
 # 쇼핑 목록 출력하기
-products = browser.find_element_by_css_selector(".p_info span")
+products = browser.find_elements_by_css_selector(".p_info span")
 print(products)
 for product in products:
     print("-", product.text)
