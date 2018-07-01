@@ -5,7 +5,8 @@ USER = "dltlgud1324"
 PASS = "Lacruz1324!@"
 
 # PhantomJS 드라이버 추출하기
-browser = webdriver.PhantomJS()
+# browser = webdriver.PhantomJS()
+browser = webdriver.PhantomJS(executable_path='/phantomjs/bin/phantomjs')
 browser.implicitly_wait(3)
 
 # 로그인 페이지에 접근하기
