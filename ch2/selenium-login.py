@@ -30,6 +30,9 @@ print("로그인 버튼을 클릭합니다,")
 # 쇼핑 페이지의 데이터 가져오기
 browser.get("https://order.pay.naver.com/home?tabMenu=SHOPPING")
 
+
+browser.save_screenshot("shopping.png")
+
 # 쇼핑 목록 출력하기
 products = browser.find_elements_by_css_selector(".p_info span")
 print(products)
