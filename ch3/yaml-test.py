@@ -28,3 +28,4 @@ data = yaml.load(yaml_str)
 # 이름과 가격 출력하기
 for item in data['PriceList']:
     print(item["name"], item["price"])
+
