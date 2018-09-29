@@ -13,13 +13,8 @@ for row in sheet.rows:
     data.append([row[0].value, row[9].value])
 
 # 필요없는 줄(헤더, 연도, 계) 제거하기
-print(data)
-
 del data[0]
-del data[1]
-del data[2]
-
-print(data)
+del data[0] # 0을 다시 삭제하는 이유는 위의 행이 삭제되고 바로 아래 행이 0부터 시작되기 때문이다.
 
 # 데이터를 인구 순서로 정렬합니다.
 data = sorted(data, key=lambda x: x[1])
